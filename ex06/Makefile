@@ -3,18 +3,18 @@
 #‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾#
 
 # Name
-NAME	= BraiiiiiiinnnzzzZ
+NAME	= Harl_Filter
 
 #______________________________________________________________________________#
 ############################### Compiler #######################################
 #‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾#
-
 # Compiler
 CC = c++
 
-RM = rm -rf
 # Compiler Flags
 CFLAGS = -Wall -Wextra -Werror -std=c++98
+
+RM = rm -rf
 
 # Reset
 NC = \033[0m
@@ -47,7 +47,7 @@ SRC_DIR		=	srcs/
 OBJ_DIR		=	objs/
 INC_DIR		=	include/
 
-SRC_FILES	=	main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
+SRC_FILES	=	main.cpp Harl.cpp
 OBJ_FILES	=	$(SRC_FILES:.cpp=.o)
 
 #paths
@@ -74,5 +74,7 @@ clean :
 
 fclean : clean
 	@$(RM) $(NAME)
+	@$(RM) filename.replace
+	@$(RM) filename
 
 re : clean all

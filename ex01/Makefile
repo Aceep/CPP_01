@@ -14,6 +14,8 @@ CC = c++
 # Compiler Flags
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
+RM = rm -rf
+
 # Reset
 NC = \033[0m
 
